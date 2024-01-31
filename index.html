@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Japan</title>
-	<link rel="stylesheet" href="styles/normalize-fwd.css">
-	<link rel="stylesheet" href="styles/country.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="home page of japan">
+    <title>Japan</title>
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/country.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -14,63 +15,84 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
+    <div class="site-wrapper">
 
-	<div class="site-wrapper">
+        <div class="Iconandnavs">
 
-
-			<nav class="site-navigation" id="site-navigation">
-
-				<ul class="header-menu">
-					<li><a href="#about-me">Food</a></li>
-					<li><a href="#">Attractions</a></li>
-                    <li><a href="#">Cities</a></li>
-				</ul>
-
-			</nav>
-            <!-- logo + video here -->
-            <main>
-                <section>
-                    <p>Food</p>
-                    <!-- image -->
-                    <!-- lorem text -->
-                </section>
-
-                <section>
-                    <p>Attractions</p>
-                    <!-- image -->
-                    <!-- lorem text -->
-                </section>
-
-                <section>
-                    <p>Cities</p>
-                    <!-- image -->
-                    <!-- lorem text -->
-                </section>
-
-            </main>
-
-	
-
-	
+            <a href="index.html">
+                <img src="favicon/mstile-70x70.png" alt="fish logo">
+            </a>
 
 
 
-		
+            <nav class="site-navigation" id="site-navigation">
 
-				
-		
-			
-		
+                <ul class="header-menu">
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="cities.html">Cities</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
 
-		<footer class="site-footer">
-			<p>&copy; FWD 2024 Matthew Lew.</p>
-		</footer>
+            </nav>
+        </div>
+    </div>
 
-	</div>
+    <div id="intro">
+        <h1>Japan</h1>
+        <video width="1920" height="1080" controls autoplay>
+            <source src="images/173522 (1080p).mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <main class="site-main">
+        <section class="introto">
+            <article class="box">
+
+                <a href="food.html">
+                    <img src="images/sushi.jpg" alt="sushi">
+                </a>
+                <p class="subtopic">Food</p>
+            </article>
+
+            <article class="box">
+
+                <a href="attractions.html">
+                    <img src="images/japan tower.jpg" alt="red and white tower" class="resize">
+
+                </a>
+                <p class="subtopic">Attractions</p>
+
+
+            </article>
+
+            <article class="box">
+
+
+                <a href="cities.html">
+                    <img src="images/osaka.jpg" alt="Osaka">
+                </a>
+                <p class="subtopic">Cities</p>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+        <p>&copy; FWD 2024 Matthew Lew.</p>
+    </footer>
+
+
 
 </body>
 

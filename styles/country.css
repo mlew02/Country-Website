@@ -34,9 +34,8 @@ h6 {
 
 }
 
-.Iconandnavs img {
-    margin-right: 10px;
-
+.Iconandnavs a{
+    margin: 0 auto;
 }
 
 a,
@@ -58,12 +57,22 @@ a:active {
 a:focus {
     outline: 1px dotted;
 }
-
+.header-menu{
+    border-top: 1px solid black;
+}
+.site-navigation{
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background: white;
+    width: 100%;
+   
+}
 .site-navigation ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
-    padding-top: 3.125rem;
+    justify-content: space-around;
+    padding: 2rem;
     margin: 0;
     font-size: 1rem;
 }
@@ -74,10 +83,11 @@ a:focus {
     font-family: "Noto Sans", sans-serif;
 }
 
-.site-navigation li {
-    padding-right: 20px;
-}
 
+.header-menu ul{
+justify-content: space-around;
+padding: 2rem;
+}
 /* video and pictures with heading 1 */
 
 #intro h1 {
@@ -106,6 +116,7 @@ a:focus {
     object-fit: cover;
     height: 20rem;
     width: 100%;
+    
 }
 
 /* body */
@@ -116,34 +127,37 @@ h2 {
 
 .site-main {
     padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .box {
 
     max-width: 25rem;
-    margin-left: auto;
-    margin-right: auto;
     
-
     color: black;
     text-align: center;
     font-size: 1.5rem;
     padding: 1rem 3rem;
-    margin-bottom: 20px;
+    
+    margin: 0;
+    
 
 }
 
 .box p {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: "Noto Sans", sans-serif;
 }
 
 article img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 20rem;
     object-fit: cover;
     margin: 0 auto;
+    object-position: center center;
 }
 
 p {
@@ -162,6 +176,9 @@ p {
     font-family: "Merriweather", serif;
     font-size: 1.5rem;
 }
+.resize{
+    width: 21.7rem;
+}
 /* footer */
 .site-footer{
     background-color: #EEEDED;
@@ -169,14 +186,20 @@ p {
     text-align: center;
     margin-top: 0;
     padding-top: 0;
+    margin: 0;
 }
-
+.site-footer p {
+    margin: 0;
+    padding-bottom: 6rem;
+    
+}
 /* credits */
 
 .table-style{
     padding-top: 4rem;
     margin: auto;
-    border-spacing: 1rem 1rem;
+    
+    border-collapse: collapse;
     
 }
 tr{
@@ -186,7 +209,7 @@ tr{
 td{
     text-align: center;
     border: 1px solid #D71313;
-    padding: 4rem;
+    padding: 2rem;
     
 }
 
@@ -239,12 +262,19 @@ input[type=submit] {
         margin: 0 auto;
         height: 40rem;
     }
+    #intro img {
+       
+        height: 30rem;
+       
+        
+    }
     
     #intro h1 {
         position: absolute;
         top: 40%;
         font-size: 4rem;
     }
+    
     .introto{
         display: grid;
         grid-template-columns: 20rem 20rem 20rem;
@@ -253,8 +283,40 @@ input[type=submit] {
         justify-content: center;
         padding: 1rem 0;
     }
+   article img{
+    width: 100%;
+   }
+   article p {
+    font-size: 1.3rem;
+    font-family: "Noto Sans", sans-serif;
+   }
+   .ontop{
+    font-size: 1.7rem;
+    font-family: "Kanit", sans-serif;
+   }
+   .site-navigation{
+    position: relative;
+   }
+    .site-navigation ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 3.125rem;
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    .site-navigation a {
+        padding: 10px;
+        border-radius: 6px;
+        font-family: "Noto Sans", sans-serif;
+    }
+    
+    .site-navigation li {
+        padding-right: 20px;
+    }
     .resize{
-        width: 40rem;
+        width: 60rem;
     }
     .anotherlayout h2{
         text-align: center;
@@ -264,5 +326,54 @@ input[type=submit] {
         display: flex;
         justify-content: space-between;
     }
+    input[type=text], select{
+    width: 70%;
+    padding: 1rem;
+      margin-bottom: 1rem;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 2rem;
+      box-sizing: border-box;
+      margin: 2rem auto;
+    
+    }
+    
+    input[type=submit] {
+        width: 50%;
+        background-color: lightcyan;
+        color: black;
+        margin: .5rem 0;
+        border: none;
+        display: block;
+        margin: 1rem auto;
+        border-radius: 2rem;
+        
+        
+      }
+    .form-p{
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        font-family: "Noto Sans", sans-serif;
+        
+    }
+    
+    .form-id {
+        border-radius: 50%;
+        width: 40rem;
+        height: 40rem;
+        padding: 3rem  ;
+        margin: 5rem auto;
+        background-color: aquamarine;
+       
+}
 
+    .form-id form{
+        text-align: center;
+        margin-top: 2rem;
+    }
+   .site-footer p {
+    padding: 0;
+    padding-bottom: 2rem;
+   }
 }
